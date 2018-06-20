@@ -1,0 +1,128 @@
+@import "less/common.less";
+@import "less/animation";
+
+#product-cashier {
+  padding-bottom: 160px;
+  .bgGray {
+    background: #f4f4f4;
+    min-width: 1200px;
+  }
+  // 头部背景图
+  .con1-wrap {
+    .common-pagehead {
+        background-image: url('images/cashier/bgCon1.png');
+        .common-pagehead-wrap {
+          span {
+            padding-left: 0px;
+            .link-a {
+              display: inline-block;
+              padding: 7px 10px;
+              font-size: 20px;
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              text-align: center;
+              border-radius: 50px;
+              transition:  all 1s;
+              &:first-child {
+                margin-right: 20px;
+                background-color: #ffffff;
+                color: #df5458;
+                &:hover {
+                  color: #fff;
+                  background-color: inherit;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+  //
+  .con2-wrap {
+    .con2-wrap-content{
+      padding: 0 0 30px;
+      overflow: hidden;
+      .main-content();
+      .con2-wrap-ul {
+        .flex;
+        justify-content: center;
+        letter-spacing: 3px;
+        li {
+          flex: 25%;
+          &:hover {
+            img{
+              transform: scale(1.1);
+              -ms-transform:scale(1.1); 	/* IE 9 */
+              -moz-transform:scale(1.1); 	/* Firefox */
+              -webkit-transform:scale(1.1); /* Safari 和 Chrome */
+              -o-transform:scale(1.1); 	/* Opera */
+            }
+            .lineheight {
+              opacity: 0;
+            }
+          }
+          .normal-inner{
+            width: 100%;
+            height: 378px;
+            overflow: hidden;;
+            position: relative;
+          }
+          .lineheight {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000000;
+            opacity: .5;
+            width: inherit;
+            height: inherit;
+            transition: all 0.6s;
+          }
+          img {
+            transition: all 0.6s;
+          }
+          p.title {
+            font-size: 20px;
+            color: #333333;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+          }
+          p.desc {
+            font-size: @bigFontSize;
+            color: #666666;
+            margin-bottom: 10px;
+            padding: 0 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  // 支付方式-模块
+  .con3-wrap {
+    padding-bottom: 20px;
+    .main-content();
+    .commonTitle span {
+      display: inline-block;
+      margin-left: 150px;
+    }
+    .con3-wrap-content {
+      .flex();
+      margin-bottom: 20px;
+      justify-content: space-around;
+      align-items: center;
+      letter-spacing: 3px;
+      p.title{
+        margin-bottom: 30px;
+        font-size: 30px;
+      }
+      p.desc {
+        font-size: @largeFontSize;
+        color: #666666;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+}

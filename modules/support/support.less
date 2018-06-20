@@ -1,0 +1,321 @@
+@import "less/common.less";
+@import "less/animation";
+
+#support-support {
+  padding-bottom: 160px;
+  .bgGray {
+    background: #f4f4f4;
+    min-width: 1200px;
+  }
+  // 头部背景图
+  .con1-wrap {
+    .common-pagehead {
+        background-image: url('images/support/bgCon1.png');
+        .common-pagehead-wrap {
+          span {
+            padding-left: 0px;
+            .link-a {
+              display: inline-block;
+              padding: 7px 10px;
+              font-size: 20px;
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              text-align: center;
+              border-radius: 50px;
+              transition:  all 1s;
+              &:first-child {
+                margin-right: 20px;
+                background-color: #ffffff;
+                color: #666666;
+                &:hover {
+                  background-color: inherit;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+
+  // tab-wrap
+  .tab-wrap {
+    overflow: hidden;
+    background: #EEF0F4;
+    width: 100%;
+    height: 60px;
+    .supportTab{
+      .main-content();
+      height: inherit;
+      overflow: hidden;
+      li {
+        height: inherit;
+        margin-right: 5px;
+        float: left;
+        &:last-child{
+          margin-right: 0;
+        }
+        .tab-name {
+          position: relative;
+          display: block;
+          height: 60px;
+          line-height: 60px;
+          padding: 0 20px;
+          color: #595961;
+          cursor: pointer;
+          &:hover {
+            background: #E2E4E8;
+          }
+        }
+        input[type=radio]{
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+            &:checked+.tab-name{
+                color: #ee879c;
+                border-bottom: 2px solid #ee879c;
+            }
+        }
+      }
+    }
+  }
+ // 右边内容
+  .support-wrap {
+    .main-content();
+    padding-top: 30px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    .instruction-container{
+      width: 940px;
+      .container-content {
+        padding-top: 30px;
+        color: #595961;
+        font-size: 14px;
+        p {
+          margin-bottom: 10px;
+          letter-spacing: 1px;
+        }
+        p.first-title {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        p.second-title {
+          font-size: 16px;
+          margin-bottom: 10px;
+          margin-top: 40px;
+        }
+        img {
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  }
+
+  // 左边菜单
+  .container-menu {
+    width: 220px;
+    margin-right: 40px;
+    .nav-menu-ul {
+      border:  1px solid #efefef;
+      font-size: 14px;
+      .nav-menu-li {
+        position: relative;
+        border-bottom: 1px solid #efefef;
+        color: #595961;
+        &:last-child {
+          border-bottom: none;
+        }
+        .nav-menu-a {
+          display: block;
+          height: 50px;
+          padding: 15px 14px;
+          cursor: pointer;
+          &:hover {
+            background: #f5f5f5;
+          }
+          .right-down{
+            display: block;
+            width: 15px;
+            height: 15px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          &.active {
+            .right-down {
+              transform:rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+    .menu-sub-ul {
+      display: none;
+      .menu-sub-li {
+        color: #9797A1;
+        font-size: 12px;
+        .menu-sub-a {
+          display: block;
+          padding: 15px 14px 15px 20px;
+          cursor: pointer;
+          &:hover {
+            // background: #f5f5f5;
+            color: #ee879c;
+          }
+          &.active {
+            // background: #f9d4dd;
+            color: #ee879c;
+            // color: #595961;
+            border-left: 2px solid #ee879c;
+            &:hover{
+              // color: #595961;
+              color: #ee879c;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 使用手册-模块
+  .con2-wrap {
+    .main-content();
+    letter-spacing: 5px;
+    color: #333333;
+    text-align: center;
+    padding: 30px;
+    .con2-wrap-content {
+      .flex();
+      overflow: hidden;
+      justify-content: center;
+      flex-wrap:wrap;
+      a {
+        display: flex;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        width: 500px;
+        align-items: center;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        .pic {
+          width: 114px;
+          height: 114px;
+          margin-right: 15px;
+          img {
+            height: inherit;
+            width: inherit;
+          }
+        }
+        .word {
+          text-align: left;
+          p.title{
+            // margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+          }
+          p.desc {
+            margin-top: 15px;
+            font-size: @contentTitleSize;
+            color: #999999;
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  // 常见问题-模块
+  .con3-wrap {
+    overflow: hidden;
+    color: #ffffff;
+    padding-bottom: 80px;
+    .con3-wrap-content {
+      .main-content();
+      justify-content: space-around;
+      flex-wrap: wrap;
+      div {
+        flex: 25%;
+        .flex();
+        justify-content: center;
+        padding: 20px 0;
+        .pic {
+          margin-right: 20px;
+          margin-top: 20px;
+          width: 80px;
+          height: 80px;
+          img {
+            width: inherit;
+            height: inherit;
+          }
+        }
+        p.title {
+          font-size: 20px;
+          color: #333333;
+          margin-bottom: 10px;
+          letter-spacing: 3px;
+        }
+        a {
+          display: block;
+          color: #999999;
+          transition: all 1s;
+          margin-bottom: 5px;
+          &:hover {
+            color: blue;
+          }
+        }
+      }
+    }
+  }
+
+  // 我有问题-模块
+  .con4-wrap {
+    .con4-wrap-content{
+      background-image: url('images/support/bgCon2.png');
+      height: 590px;
+      text-align: center;
+      .title {
+        font-size: 34px;
+        color: #fff;
+        padding-top: 80px;
+        letter-spacing: 5px;
+      }
+      .content-wrap {
+        width: 996px;
+        height: 275px;
+        background: #fff;
+        margin:  50px auto 0;
+        border-radius: 6px;
+        padding: 40px;
+        letter-spacing: 5px;
+        p.first{
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+        p.second{
+          color: #999999;
+          font-size: 18px;
+          margin-bottom: 30px;
+        }
+        a {
+          display: inline-block;
+          width: 420px;
+          height: 68px;
+          border-radius: 6px;
+          background: #eb656D;
+          line-height: 68px;
+          color: #fff;
+          font-size: 20px;
+          transition:  all 1s;
+          &:hover {
+            background-color: #d94a4a;
+          }
+        }
+      }
+    }
+  }
+}

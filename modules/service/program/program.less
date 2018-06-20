@@ -1,0 +1,146 @@
+@import "less/common.less";
+@import "less/animation";
+
+#service-program{
+  padding-bottom: 160px;
+  .bgGray {
+    background: #f4f4f4;
+    min-width: 1200px;
+  }
+  // 头部背景图
+  .con1-wrap {
+    .common-pagehead {
+        background-image: url('images/program/bgCon1.png');
+        .common-pagehead-wrap {
+          span {
+            padding-left: 0px;
+            .link-a {
+              display: inline-block;
+              padding: 7px 10px;
+              font-size: 20px;
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              text-align: center;
+              border-radius: 50px;
+              transition:  all 1s;
+              &:first-child {
+                margin-right: 20px;
+                background-color: #ffffff;
+                color: #21cb9a;
+                &:hover {
+                  background-color: inherit;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+
+  // 为什么选择-模块
+  .con2-wrap {
+    padding-bottom: 100px;
+    .flex {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .con2-item {
+        position: relative;
+        width: 342px;
+        height: 448px;
+        margin-bottom: 30px;
+        text-align: center;
+        overflow: hidden;
+        background: #ffffff;
+        padding: 60px 30px 20px;
+        // box-shadow: 0 0 80px #e4e4e4;                    /* For Latest Opera */
+        // -moz-box-shadow: 0 0 80px #e4e4e4;               /* For Firefox3.6+ */
+      	// -webkit-box-shadow: 0 0 80px #e4e4e4;            /* For Chrome5+, Safari5+ */
+        transition:transform 0.25s ease;
+        &:hover {
+          transform:scale(1.05,1.05);
+        }
+        .con2-item-desc {
+          display: block;
+          margin-top: 50px;
+          letter-spacing: 3px;
+          .title {
+            font-size: 20px;
+            color: #333333;
+            margin-bottom: 20px;
+          }
+          .desc {
+            font-size: @contentTitleSize;
+            color: #999999;
+            text-align: left;
+            padding: 0 21px;
+            text-indent: 30px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .con3-wrap {
+    .con3-wrap-content{
+      padding: 0 0 30px;
+      overflow: hidden;
+      .main-content();
+      .con3-wrap-ul {
+        .flex;
+        justify-content: center;
+        letter-spacing: 5px;
+        li {
+          flex: 25%;
+          &:hover {
+            img{
+              transform: scale(1.1);
+              -ms-transform:scale(1.1); 	/* IE 9 */
+              -moz-transform:scale(1.1); 	/* Firefox */
+              -webkit-transform:scale(1.1); /* Safari 和 Chrome */
+              -o-transform:scale(1.1); 	/* Opera */
+            }
+            .lineheight {
+              opacity: 0;
+            }
+          }
+          .normal-inner{
+            width: 100%;
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+          }
+          .lineheight {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000000;
+            opacity: .5;
+            width: inherit;
+            height: inherit;
+            transition: all 0.6s;
+          }
+          img {
+            transition: all 0.6s;
+            // width: inherit;
+            // height: inherit;
+          }
+          p.title {
+            font-size: 20px;
+            color: #333333;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+          }
+          p.desc {
+            font-size: @largeFontSize;
+            color: #999999;
+            margin-bottom: 10px;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

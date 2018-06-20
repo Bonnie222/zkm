@@ -1,0 +1,142 @@
+@import "less/common.less";
+@import "less/animation";
+
+#product-model{
+  padding-bottom: 160px;
+  .bgGray {
+    background: #f4f4f4;
+    min-width: 1200px;
+  }
+  // 头部背景图
+  .con1-wrap {
+    .common-pagehead {
+        background-image: url('images/model/bgCon1.png');
+        .common-pagehead-wrap {
+          span {
+            padding-left: 0px;
+            .link-a {
+              display: inline-block;
+              padding: 7px 10px;
+              font-size: 20px;
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              text-align: center;
+              border-radius: 50px;
+              transition:  all 1s;
+              &:first-child {
+                margin-right: 20px;
+                background-color: #ffffff;
+                color: #67c2f1;
+                &:hover {
+                  background-color: inherit;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+
+  // 经营方案-模块
+  .con2-wrap {
+    padding-bottom: 20px;
+    .con2-wrap-content {
+      .flex();
+      .main-content();
+      margin-bottom: 20px;
+      justify-content: space-around;
+      align-items: center;
+      letter-spacing: 3px;
+      padding:0 30px;
+      p.title{
+        margin-bottom: 30px;
+        font-size: 30px;
+      }
+      p.desc {
+        font-size: @bigFontSize;
+        color: #666666;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  // 众多门店模块
+  .con3-wrap {
+    padding-bottom: 50px;
+    overflow: hidden;
+    .con3-wrap-content {
+      .main-content();
+      .flex;
+      justify-content: space-around;
+      .con3-wrap-item {
+        text-align: center;
+        letter-spacing: 3px;
+        .pic {
+          display: block;
+          width: 102px;
+          height: 102px;
+          margin-bottom: 20px;
+          img {
+            height: inherit;
+            transition:  all .5s;
+            &:hover {
+              transform: rotateZ(360deg);
+            }
+          }
+        }
+        p.title {
+          font-size: 18px;
+          color: #666666;
+        }
+      }
+    }
+  }
+
+  // 匹配-模块
+  .con4-wrap{
+    .con4-wrap-content {
+      .main-content;
+      .flex;
+      justify-content: space-around;
+      .top-content{
+        .flex;
+        color: #666666;
+        font-size: 18px;
+        margin-bottom: 20px;
+        img.second-img {
+          margin-top: 10px;
+        }
+        span {
+          line-height: 34px;
+          &.first-span{
+            margin-top: 45px;
+          }
+          &.second-span{
+            margin-top: 38px;
+            margin-left: -12px;
+            line-height: 65px;
+          }
+        }
+      }
+      .bottom-content {
+        .flex;
+        letter-spacing: 3px;
+        padding-bottom: 30px;
+        img {
+          margin-right: 10px;
+        }
+        p.title{
+          color: #666666;
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        p.desc {
+          color: #999999;
+          font-size: 12px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

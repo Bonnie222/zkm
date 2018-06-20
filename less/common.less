@@ -1,0 +1,310 @@
+@import "less/animation";
+
+/* 用户端主题颜色 */
+@commonColor: #0095ee;
+/* 边界线颜色 */
+@lineColor : #d7efff;
+/* 小字体大小 */
+@smallFontSize : 12px;
+/* 一般内容字体大小 */
+@contentFontSize : 13px;
+/* 一般标题字体大小 */
+@contentTitleSize : 14px;
+/* 较大字体大小 */
+@bigFontSize: 16px;
+/* 大字体大小 */
+@largeFontSize: 18px;
+
+body, html {
+    background: #fff;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+
+.main-content {
+    width: 1200px;
+    margin: auto;
+}
+//公共混合
+/**
+*公共的按钮样式
+*@btnWidth (必填) 按钮的宽度
+*@btnHeight (非必填) 按钮的高度，不填的情况下高度默认32px
+**/
+.btn(@btnWidth,@btnHeight:32px){
+    width: @btnWidth;
+    height: @btnHeight;
+    line-height: @btnHeight;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+/* 单行文本溢出用省略号代替 */
+.overflow-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 多行文本溢出利用省略号代替,仅用于webkit内核 $line 行数*/
+.mul-overflow-ellipsis(@lineNum){
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @lineNum;
+}
+.pull-left{
+    float: left !important;
+}
+.pull-right{
+    float: right !important;
+}
+.inlineblock{
+    display: inline-block;
+}
+.flex {
+  display: flex;
+}
+
+.flow-hide {
+    overflow: hidden;
+}
+//tab类公用样式
+.tab-list {
+    font-size: 0;
+    & > li {
+        display: inline-block;
+        text-align: center;
+        font-size: @contentTitleSize;
+        label, .tab-name {
+            cursor: pointer;
+            display: block;
+        }
+        input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+}
+// 表格类公用样式
+.zfish-common-table {
+    width: 100%;
+    font-size: @contentFontSize;
+    td, th{
+        vertical-align: middle;
+    }
+    thead {
+        th {
+            background-color: #F2F2F2;
+            color: #999;
+            height: 32px;
+            &:first-child {
+                text-indent: 10px;
+            }
+        }
+    }
+    tbody {
+        td {
+            max-width: 675px;
+            overflow: hidden;
+            word-wrap:break-word;
+            word-break:break-all;
+            padding: 10px 0;
+            border-bottom: 1px solid #e4e4e4;
+        }
+    }
+    .operation-list {
+        font-size: 0;
+        & > * {
+            color: @commonColor;
+            margin-right: 10px;
+            font-size: @contentFontSize;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+// 分页样式
+.pagination {
+    font-size: @smallFontSize;
+    a, span {
+        @height: 24px;
+        display: inline-block;
+        padding: 0 9px;
+        height: @height;
+        line-height: @height;
+        text-align: center;
+        vertical-align: top;
+        color: #666;
+        margin-left: 8px;
+        background: #f2f2f2;
+    }
+    .page-size-show{
+        display: inline-block;
+        line-height: 24px;
+        color: #666;
+        margin-right: 20px;
+        .page-size-ipt{
+            width: 32px;
+            height: 24px;
+            margin: 0 8px;
+            padding: 0 2px;
+            text-align: center;
+        }
+    }
+    .jump-wrap{
+        display: inline-block;
+        line-height: 24px;
+        margin-left: 20px;
+        color: #666;
+        .jump-ipt{
+            height: 24px;
+            width: 32px;
+            margin: 0 8px;
+            text-align: center;
+            padding: 0 2px;
+        }
+    }
+    .first{
+        margin-right: 10px;
+        margin-left: 0;
+    }
+    .jump{
+        cursor: pointer;
+    }
+    .current {
+        background: @commonColor;
+        color: #FFFFFF;
+        cursor: default;
+        &.prev, &.next,&.first,&.last{
+            background: #f2f2f2;
+            color: #666;
+        }
+        &.prev{
+            margin-left: 0;
+        }
+    }
+}
+// 上传图片样式
+.upload-img-wrap{
+    background: #FFFFFF;
+    form {
+        background: #F2F2F2;
+        width: 170px;
+        margin-right: 10px;
+        border: 1px solid #E4E4E4;
+        position: relative;
+        display: inline-block;
+        height: 170px;
+        vertical-align: middle;
+        input {
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+        }
+        p, .plus {
+            position: absolute;
+            color: #999999;
+            text-align: center;
+            width: 100%;
+            pointer-events: none;
+        }
+        .plus {
+            font-size: 72px;
+            top: 30px;
+            left: 0;
+        }
+        p {
+            font-size: @contentTitleSize;
+            top: 70%;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: none;
+            background: #FFFFFF;
+            &.show {
+                display: block;
+            }
+        }
+        .icon-close {
+            position: absolute;
+            font-size: 34px;
+            color: @commonColor;
+            font-weight: bold;
+            top: -2px;
+            right: 6px;
+            cursor: pointer;
+            display: none;
+            &:hover {
+                font-size: 40px;
+                top: -5px;
+                right: 3px;
+            }
+            &.show {
+                display: block;
+            }
+        }
+    }
+    form:last-child {
+        margin-right: 0;
+    }
+}
+.displayNone{
+    display: none;
+}
+.displayBlock{
+    display: block;
+}
+
+// 某些页面每个模块的标题
+.commonTitle {
+    font-size: 36px;
+    color: #333333;
+    padding:  50px 0;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+// 某些页面头部模块 （背景图/文字可变）
+.common-pagehead{
+  height: 420px;
+  background-size: 100% 100%;
+  .common-pagehead-wrap {
+    .main-content;
+    .animationFadeInLeft;
+    overflow: hidden;
+    height: inherit;
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-size: 30px;
+    span {
+      width: inherit;
+      height: inherit;
+      display: inline-block;
+      padding-top: 130px;
+      margin-left: 80px;
+      // display: table-cell;
+      // vertical-align: middle;
+      p:first-child {
+        font-size: 60px;
+        margin-bottom: 20px;
+      }
+      p > a {
+        margin-top: 40px;
+      }
+    }
+  }
+}

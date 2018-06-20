@@ -1,0 +1,33 @@
+<div id="instructionWrap">
+  <div class="container-menu pull-left">
+    <ul class="nav-menu-ul">
+      <% _.each(menuList, function(item){ %>
+      <li class="nav-menu-li">
+        <a class="nav-menu-a">
+          <span><%= item.name %></span>
+          <span class="right-down pull-right"><img src="images/down.svg" /><span>
+        </a>
+        <ul class="menu-sub-ul">
+          <% _.each(item.childList, function(secItem){ %>
+          <li class="menu-sub-li">
+            <a class="menu-sub-a" data-class="<%= secItem.className %>">
+              <span><%= secItem.name %><span>
+            </a>
+          </li>
+          <% }) %>
+        </ul>
+      </li>
+    <% }) %>
+    </ul>
+  </div>
+  <div class="instruction-container pull-left">
+    <div class="storeSet"></div>
+    <div class="merchandise"></div>
+    <div class="booking"></div>
+    <div class="order"></div>
+    <div class="notice"></div>
+    <div class="customer"></div>
+    <div class="marketing"></div>
+    <div class="statistical"></div>
+  </div>
+</div>

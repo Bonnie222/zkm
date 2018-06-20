@@ -1,0 +1,83 @@
+@import "less/common.less";
+@import "less/animation";
+
+#product-mall {
+  padding-bottom: 160px;
+  .bgGray {
+    background: #f4f4f4;
+    min-width: 1200px;
+  }
+  // 头部背景图
+  .con1-wrap {
+    .common-pagehead {
+        background-image: url('images/mall/bgCon1.png');
+        .common-pagehead-wrap {
+          span {
+            padding-left: 0px;
+            .link-a {
+              display: inline-block;
+              padding: 7px 10px;
+              font-size: 20px;
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              text-align: center;
+              border-radius: 50px;
+              transition:  all 1s;
+              &:first-child {
+                margin-right: 20px;
+                background-color: #ffffff;
+                color: #61e8bd;
+                &:hover {
+                  background-color: inherit;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+
+  // 电商系统-模块
+  .con2-wrap {
+    padding-bottom: 20px;
+    .con2-wrap-content {
+      .flex();
+      .main-content();
+      margin-bottom: 20px;
+      justify-content: space-around;
+      align-items: center;
+      letter-spacing: 3px;
+      p.title{
+        margin-bottom: 30px;
+        font-size: 30px;
+      }
+      p.desc {
+        font-size: @bigFontSize;
+        color: #666666;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .con3-wrap {
+    .main-content();
+    padding: 100px 0;
+    .con3-wrap-content {
+      .flex;
+      justify-content: space-around;
+      .con3-wrap-item {
+        text-align: center;
+        letter-spacing: 3px;
+        p.title {
+          font-size: 20px;
+          margin-bottom: 20px;
+          color: #666666;
+        }
+        p.desc {
+          color: #999999;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+@import "less/common.less";
+@import "less/animation";
+
+#home-store {
+  padding-bottom: 160px;
+  .bgGray {
+    background: #f4f4f4;
+    min-width: 1200px;
+  }
+  // 头部背景图
+  .con1-wrap {
+    .common-pagehead {
+        background-image: url('images/store/bgCon1.jpg');
+        .common-pagehead-wrap {
+          span {
+            padding-left: 0px;
+            .link-a {
+              display: inline-block;
+              padding: 7px 10px;
+              font-size: 20px;
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              text-align: center;
+              border-radius: 50px;
+              transition:  all 1s;
+              &:first-child {
+                margin-right: 20px;
+                background-color: #ffffff;
+                color: #666666;
+                &:hover {
+                  background-color: inherit;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+
+  // 模式-模块
+  .con2-wrap {
+    .main-content();
+    height: 456px;
+    letter-spacing: 5px;
+    color: #333333;
+    text-align: center;
+    padding: 30px;
+    .con2-wrap-content {
+      .flex();
+      justify-content: space-around;
+      p.title{
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      p.desc {
+        margin-top: 10px;
+        font-size: @contentTitleSize;
+        color: #999999;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  // 管理系统-模块
+  .con3-wrap {
+    overflow: hidden;
+    color: #ffffff;
+    padding-bottom: 80px;
+    .con3-wrap-content {
+      .main-content();
+      justify-content: space-around;
+      flex-wrap: wrap;
+      div {
+        flex: 25%;
+        text-align:center;
+        margin-top: 100px;
+        padding: 20px 0;
+        &:hover {
+          background-color: #f4f4f4;
+        }
+        &:nth-child(-n+4){
+          margin-top: 0;
+        }
+        p {
+          font-size: 20px;
+          color: #333333;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  // 营销工具-模块
+  .con4-wrap {
+    .con4-wrap-content{
+      padding: 0 0 30px;
+      .main-content();
+      .con4-wrap-ul {
+        .flex;
+        justify-content: center;
+        letter-spacing: 5px;
+        .title {
+          font-size:20px;
+          color: #333333;
+          margin-top: 15px;
+          text-align: center;
+        }
+        li {
+          flex:1;
+          .normal-inner {
+            height: 344px;
+            overflow: hidden;
+            transition:all .5s;
+            -moz-transition:all .5s;
+            -webkit-transition:all .5s;
+            -o-transition:all .5s;
+            img{
+              height:inherit;
+            }
+          }
+          .active-inner {
+            width: 400px;
+            height:344px;
+            background: #ffffff;
+            font-size:16px;
+            font-weight: bold;
+            padding: 0 50px;
+            display: none;
+            transition:all .5s;
+            -moz-transition:all .5s;
+            -webkit-transition:all .5s;
+            -o-transition:all .5s;
+            text-align: center;
+          }
+          &.active {
+            flex: 2;
+            .active-inner {
+              display: table;
+              p{
+                display: table-cell;
+                vertical-align: middle;
+              }
+            }
+            .normal-inner{
+              display: none;
+            }
+          }
+      }
+    }
+
+    }
+  }
+
+  // 运营体系-模块
+  .con5-wrap {
+    padding-bottom: 100px;
+    .flex {
+      // overflow: hidden;
+      justify-content: space-around;
+      // background: yellow;
+      .con5-item {
+        width: 326px;
+        height: 406px;
+        // border: 1px solid #e4e4e4;
+        text-align: center;
+        padding: 60px 30px 20px;
+        box-shadow: 0 0 80px #e4e4e4;                    /* For Latest Opera */
+        -moz-box-shadow: 0 0 80px #e4e4e4;               /* For Firefox3.6+ */
+      	-webkit-box-shadow: 0 0 80px #e4e4e4;            /* For Chrome5+, Safari5+ */
+        transition:transform 0.25s ease;
+        &:hover {
+          transform:scale(1.1,1.1);
+        }
+        .con5-item-desc {
+          margin-top: 30px;
+          letter-spacing: 5px;
+          .title {
+            font-size: 30px;
+            color: #333333;
+            margin-bottom: 20px;
+          }
+          .desc {
+            font-size: @largeFontSize;
+            color: #999999;
+            padding: 0 21px;
+            line-height: 38px;
+          }
+        }
+      }
+    }
+  }
+}

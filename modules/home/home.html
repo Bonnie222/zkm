@@ -1,0 +1,93 @@
+<div id="home-home">
+    <div class="slider" id="sliderWrap">
+        <div id="slides">
+            <ul class="slides-container">
+            </ul>
+        </div>
+    </div>
+    <div class="con1-wrap" id="con1Wrap">
+      <div>
+        已入驻招客猫商家“上百”家
+      </div>
+    </div>
+    <div class="bgGray">
+      <div class="con2-wrap flex" id="con2Wrap">
+        <div class="con2-left special" data-move-x="-200px">
+          <img src="../../images/home/storeMange.png"/>
+        </div>
+        <div class="con2-right con-info special"  data-rotate-y="90deg">
+          <div class="con-title">
+            <p>门店营销管理</p>
+            <p class="english">STORE MARKETING MANAGEMENT</p>
+          </div>
+          <div class="con-desc">
+            <p>打通线上微门店与线下实体店便捷高效的管理您的各大门店</p>
+            <p>每日订单，每日收益一目了然</p>
+          </div>
+          <div class="con-btn">
+            <a href="#/home/store">了解详情</a>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3564634648&site=qq&menu=yes"
+              >在线咨询</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bgRed">
+      <div class="con3-wrap flex">
+        <div class="con2-left con-info special" data-rotate-y="90deg">
+          <div class="con-title">
+            <p>社交裂变营销</p>
+            <p class="english">SOCIAL MARKETING</p>
+          </div>
+          <div class="con-desc">
+            <p>借力小程序， 玩转社交营销最大限度获取新会员</p>
+          </div>
+          <div class="con-btn">
+            <a href="#/home/social">了解详情</a>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3564634648&site=qq&menu=yes"
+               >在线咨询</a>
+          </div>
+        </div>
+        <div class="con2-right special" data-move-x="200px">
+          <img src="../../images/home/social.png"/>
+        </div>
+      </div>
+    </div>
+    <div class="bgGray con4-wrap" id="picWrap">
+      <div class="overShade">
+        <div class="con4-content flex">
+          <div class="picture-wrap flex">
+            <div class="pic-computer special" data-move-x="1000px">
+              <div class="bgPic">
+                <img id="computerBg" src="images/home/tab1(1).png"/>
+              </div>
+            </div>
+            <div class="pic-phone  special" data-move-x="-1000px">
+              <div class="bgPic">
+                <img id="phoneBg" src="images/home/tab1(3).png"/>
+              </div>
+            </div>
+          </div>
+          <div class="hover-wrap flex" id="iconHoverWrap"></div>
+        </div>
+      </div>
+    </div>
+    <div class="con5-wrap">
+      <p class="title special" data-scale="0.5">他们都在使用招客猫小程序</p>
+      <div class="partner-wrap flex">
+        <% _.each(partnerList, function(item){ %>
+        <div class="partner-outer">
+          <div class="partner-item">
+            <img src="<%= item.logo %>"/>
+            <p><%= item.desc %></p>
+          </div>
+          <% if(item.code) { %>
+            <div class="partner-code">
+              <img src="<%= item.code %>"/>
+            </div>
+          <% } %>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+</div>
