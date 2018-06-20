@@ -1,0 +1,82 @@
+<div id="home-store">
+  <div class="con1-wrap">
+    <div class="common-pagehead">
+      <div class="common-pagehead-wrap">
+        <span>
+          <p>一站式管理平台</p>
+          <p>会员营销，门店管理</p>
+          <!-- <p>
+            <a class="link-a" target="_blank" href="https://merchant.zhaokemall.com/">立即试用</a>
+          </p> -->
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="bgGray">
+    <div class="con2-wrap">
+      <p class="commonTitle"><%= model.title %></p>
+      <div class="con2-wrap-content">
+        <% _.each(model.list, function(item){ %>
+        <div>
+          <img src="<%= item.pic %>" />
+          <p class="title"><%= item.text %></p>
+          <P class="desc"><%= item.desc %></p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+  <div class="con3-wrap">
+    <p class="commonTitle"><%= manage.title %></p>
+    <div class="con3-wrap-content flex">
+      <% _.each(manage.list, function(item, index) {%>
+        <% if(index==0 || index==4){ %>
+      <div class="special" data-move-x="-500px">
+        <% } else if(index==3 || index==7) {%>
+      <div class="special" data-move-x="500px">
+        <% } else { %>
+      <div class="special" data-scale="0.8">
+        <% } %>
+        <img src="<%= item.pic %>" />
+        <p><%= item.text %></p>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+  <div class="con4-wrap bgGray">
+    <p class="commonTitle"><%= sell.title %></p>
+    <div class="con4-wrap-content">
+      <ul class="con4-wrap-ul">
+        <% _.each(sell.list, function(item, index) {%>
+          <% if(index==2){ %>
+        <li class="active">
+          <% }else{ %>
+        <li>
+          <% } %>
+          <div class="normal-inner">
+            <img src="<%= item.pic %>"/>
+          </div>
+          <div class="active-inner">
+            <p><%= item.desc %></p>
+          </div>
+          <p class="title"><%= item.title %></p>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+  <div class="con5-wrap main-content">
+    <p class="commonTitle"><%= system.title %></p>
+    <div class="flex">
+      <% _.each(system.list, function(item){ %>
+      <div class="con5-item">
+        <img src="<%= item.pic %>"/>
+        <div class="con5-item-desc">
+          <p class="title"><%= item.title %></p>
+          <p class="desc"><%= item.desc %></p>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,144 @@
+<div id="home-social">
+  <div class="con1-wrap">
+    <div class="common-pagehead">
+      <div class="common-pagehead-wrap">
+        <span>
+          <p>互联网时代</p>
+          <p>消费者升级为消费商</p>
+          <!-- <p>
+            <a class="link-a" target="_blank" href="https://merchant.zhaokemall.com/">立即试用</a>
+          </p> -->
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="bgGray">
+    <div class="con2-wrap">
+      <p class="commonTitle"><%= advantage.title %></p>
+      <div class="con2-wrap-content">
+        <% _.each(advantage.list, function(item){%>
+        <div>
+          <img src="<%= item.pic %>" />
+          <p><%= item.text %></p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+  <div class="con3-wrap">
+    <p class="commonTitle">迅速了解裂变营销</p>
+    <div class="con3-wrap-content">
+      <div class="main-content">
+        <div  class="special" data-rotate-y="90deg">
+          裂变营销以传统的终端促销的加强为基础，整合了关系营销，数据库营销和
+          会务营销等新型营销方式的方法和理念。这种裂变模式其实指的是终端市场的裂变。
+          传播个体（企业/个人等）通过在社群（种子用户）中发布一个含有诱饵的内容，
+          引发用户争相传播，从而达到一个用户带动身边N个（裂变）用户的目的。移动
+          互联网营销的本质，就是裂变营销。
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="con4-wrap bgGray">
+    <p class="commonTitle">我们怎么运用裂变营销</p>
+    <div class="video-wrap">
+       <div class="sp1">
+            <div class="inner">
+                <video id="example_video" class="video-js vjs-default-skin" preload="none"  autoplay width="100%" height="100%" data-setup="{}">
+                    <source src="<%= firstMp4 %>" type='video/mp4' />
+                </video>
+            </div>
+        </div>
+        <!-- <div class="sp2">
+            <div class="inner">
+                <video id="example_video2" class="video-js vjs-default-skin" preload="none" autoplay width="100%" height="100%" data-setup="{}">
+                    <source src="videos/social/video(2).mp4" type='video/mp4' />
+                </video>
+            </div>
+        </div>
+        <div class="sp3">
+            <div class="inner">
+                <video id="example_video3" class="video-js vjs-default-skin" preload="none" autoplay width="100%" height="100%" data-setup="{}">
+                    <source src="videos/social/video(3).mp4" type='video/mp4' />
+                </video>
+            </div>
+        </div>
+        <div class="sp4">
+            <div class="inner">
+                <video id="example_video4" class="video-js vjs-default-skin" preload="none" autoplay width="100%" height="100%" data-setup="{}">
+                    <source src="videos/social/video(4).mp4" type='video/mp4' />
+                </video>
+            </div>
+        </div>-->
+        <div class="videoch">
+            <ul class="flex">
+                <li class="vidf1 music active" id="vidf1" data-index="4">
+                    <i></i><i></i>
+                    <i></i><i></i>
+                    <i></i><i></i>
+                    <i></i><i></i>
+                    <i></i><i></i>
+                    <i></i><i></i>
+                    <i></i><i></i>
+                </li>
+                <li class="vidf2 music"  id="vidf2" data-index="0">
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                </li>
+                <li class="vidf3 music" id="vidf3" data-index="1">
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                </li>
+                <li class="vidf4 music" id="vidf4" data-index="2">
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                </li>
+                <li class="vidf5 music" id="vidf5" data-index="3">
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                  <i></i><i></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div class="con5-wrap main-content">
+    <p class="commonTitle"><%= template.title %></p>
+    <div class="flex">
+      <% _.each(template.list, function(item, index) {%>
+        <% if(index%2 == 0) { %>
+      <div class="con5-item special" data-move-y="-400px">
+        <% } else { %>
+      <div class="con5-item special" data-move-y="400px">
+        <% } %>
+        <div class="con5-item-content">
+          <img src="<%= item.pic %>" />
+          <div class="con5-item-desc">
+            <%= item.desc %>
+          </div>
+        </div>
+        <p><%= item.title %></p>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>

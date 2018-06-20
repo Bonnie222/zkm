@@ -1,0 +1,64 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3,
+h4, h5, h6, p, blockquote, button, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: "PingFangSC","Helvetica Neue",Helvetica, Arial,"Hiragino Sans GB","Hiragino Sans GB W3","microsoft yahei","Heiti SC","wenquanyi micro hei",sans-serif;
+    vertical-align: baseline;
+    color: inherit;
+}
+:focus {
+    outline: 0;
+}
+a{
+	text-decoration: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+a img, iframe {
+    border: none;
+}
+ol, ul, li {
+    list-style: none;
+}
+input, textarea, select {
+    font-size: 100%;
+    font-family: inherit;
+    border: 1px solid #CCCCCC;
+}
+textarea {
+    resize: none;
+}
+select {
+    margin: 0;
+}
+/* Fixes incorrect placement of numbers in ol’s in IE6/7 */
+ol { margin-left:2em; }
+/* == clearfix == */
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+ul{
+	padding: 0;
+	list-style: none;
+}

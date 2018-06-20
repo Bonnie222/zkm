@@ -1,0 +1,24 @@
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="58px" height="58px" viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'JLinXin';}
+	.st3{font-size:12px;}
+	.st4{fill:url(#SVGID_2_);}
+</style>
+<defs>
+</defs>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="29" x2="58" y2="29">
+	<stop  offset="2.434045e-03" style="stop-color:#37ECBA"/>
+	<stop  offset="1" style="stop-color:#3EFF9E"/>
+</linearGradient>
+<path class="st0" d="M50,58H8c-4.4,0-8-3.6-8-8V8c0-4.4,3.6-8,8-8h42c4.4,0,8,3.6,8,8v42C58,54.4,54.4,58,50,58z"/>
+<text transform="matrix(1 0 0 1 11.3333 32.5712)" class="st1 st2 st3">小程序</text>
+<polygon class="st1" points="39,41.1 26.4,42.9 26.4,52.1 39,52.1 "/>
+<rect x="26.4" y="53.3" class="st1" width="12.6" height="4.4"/>
+<polygon class="st1" points="24.5,43.1 15,44.4 15,52.1 24.5,52.1 "/>
+<rect x="15" y="53.3" class="st1" width="9.5" height="4.4"/>
+</svg>

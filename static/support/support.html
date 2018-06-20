@@ -1,0 +1,83 @@
+<div id="support-support">
+  <div class="con1-wrap">
+    <div class="common-pagehead">
+      <div class="common-pagehead-wrap">
+        <span>
+          <p>帮助中心为您解决困惑</p>
+          <p>快速认识招客猫 招客猫是什么 招客猫有什么 招客猫怎么用</p>
+          <!-- <p>
+            <a class="link-a" target="_blank" href="https://merchant.zhaokemall.com/">立即试用</a>
+          </p> -->
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="tab-wrap">
+    <ul class="supportTab">
+      <% _.each(tabList, function(item){ %>
+      <li>
+        <a href="<%= item.href %>">
+          <label>
+            <input type="radio" name="paramName" />
+            <span class="tab-name">
+              <%= item.name %>
+            </span>
+          </label>
+        </a>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+  <div class="support-wrap" id="support-content"></div>
+  <!-- <div class="bgGray">
+    <div class="con2-wrap">
+      <p class="commonTitle"><%= use.title %></p>
+      <div class="con2-wrap-content">
+        <% _.each(use.list, function(item, index) {%>
+          <% if(index == 0 || index == 1 || index== 2 || index==3){ %>
+        <a class="special" data-move-y="-500px">
+          <% }else{ %>
+        <a class="special" data-move-y="500px">
+          <% } %>
+          <span class="pic">
+            <img src="<%= item.pic %>" />
+          </span>
+          <span class="word">
+            <p class="title"><%= item.text %></p>
+            <p class="desc"><%= item.desc %></p>
+          </span>
+        </a>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+  <div class="con3-wrap">
+    <p class="commonTitle"><%= question.title %></p>
+    <div class="con3-wrap-content flex">
+      <% _.each(question.list, function(item, index) {%>
+      <div class="special" data-scale="0.8">
+        <span class="pic">
+          <img src="<%= item.pic %>" />
+        </span>
+        <span>
+          <p class="title"><%= item.title %></p>
+          <% _.each(item.linkList, function(link){ %>
+            <a><%= link.name %></a>
+          <% }) %>
+        <span>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+  <div class="con4-wrap">
+    <div class="con4-wrap-content">
+      <p class="title">我有问题</p>
+      <div class="content-wrap">
+        <p class="first">经营店铺遇到问题</p>
+        <p class="second">发布需求经招客猫认证的优质运营团队为您解决</p>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3564634648&site=qq&menu=yes">咨询需求</a>
+      </div>
+    </div>
+  </div> -->
+
+</div>

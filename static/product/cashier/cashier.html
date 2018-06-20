@@ -1,0 +1,61 @@
+<div id="product-cashier">
+  <div class="con1-wrap">
+    <div class="common-pagehead">
+      <div class="common-pagehead-wrap">
+        <span>
+          <p>钱的事，很重要</p>
+          <p>招客猫收银系统省心，安全，多样化</p>
+          <!-- <p>
+            <a class="link-a" target="_blank" href="https://merchant.zhaokemall.com/">立即试用</a>
+          </p> -->
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="con2-wrap bgGray">
+    <p class="commonTitle"><%= cause.title %></p>
+    <div class="con2-wrap-content">
+      <ul class="con2-wrap-ul">
+        <% _.each(cause.list, function(item, index) {%>
+          <% if(index%2==0){ %>
+        <li class="special" data-move-y="-300px">
+          <% } else{ %>
+        <li class="special" data-move-y="300px">
+          <% } %>
+          <div class="normal-inner">
+            <img src="<%= item.pic %>"/>
+            <div class="lineheight"></div>
+          </div>
+          <p class="title"><%= item.title %></p>
+          <p class="desc"><%= item.desc %><p>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+  <div class="con3-wrap">
+    <p class="commonTitle"><span>安全便利的支付方式</span>
+      <img src="/images/cashier/way(1).png" class="pull-right special" data-move-x="200px"/>
+    </p>
+    <div class="con3-wrap-content">
+      <span class="special" data-move-x="-400px">
+        <p class="title">银行级别的安全<p>
+        <p class="desc">营销活动，库存管理和各个渠道的账目清算</p>
+      </span>
+      <span class="special" data-move-x="400px">
+        <img src="/images/cashier/way(2).png" />
+      </span>
+    </div>
+    <div class="con3-wrap-content">
+      <span class="special" data-move-x="-400px">
+        <img src="/images/cashier/way(3).png" />
+      </span>
+      <span class="special" data-move-x="400px">
+        <p class="title">随时随地的便利<p>
+        <p class="desc">招客猫收银系统联合通联宝支付，随时随地，</p>
+        <p class="desc">不同的设备，用不同的方式</p>
+      </span>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,61 @@
+<div id="product-mall">
+  <div class="con1-wrap">
+    <div class="common-pagehead">
+      <div class="common-pagehead-wrap">
+        <span>
+          <p>招客猫，微商城</p>
+          <p>低成本，高回报，轻松开网店</p>
+          <!-- <p>
+            <a class="link-a" target="_blank" href="https://merchant.zhaokemall.com/">立即试用</a>
+          </p> -->
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="bgGray">
+    <div class="con2-wrap">
+      <p class="commonTitle">强大的电商系统，任您选择</p>
+      <div class="con2-wrap-content">
+        <span class="special" data-move-x="-400px">
+          <p class="title">众多营销方式<p>
+          <p class="desc">促销，拉新，留存，推广，客户自传播，随时随地经营</p>
+          <p class="desc">您要的生意经，招客猫都能有</p>
+        </span>
+        <span class="special" data-move-x="400px">
+          <img src="/images/mall/mall(1).png" />
+        </span>
+      </div>
+      <div class="con2-wrap-content">
+        <span class="special" data-move-x="-400px">
+          <img src="/images/mall/mall(2).png" />
+        </span>
+        <span class="special" data-move-x="400px">
+          <p class="title">众多主题展示<p>
+          <p class="desc">多元化，覆盖各行业店铺模板</p>
+          <p class="desc">随心搭配，您的店铺您做主</p>
+        </span>
+      </div>
+      <div class="con2-wrap-content">
+        <span class="special" data-move-x="-400px">
+          <p class="title">众多销售渠道<p>
+          <p class="desc">您的员工，您的客户，您的亲朋好友都是销售渠道</p>
+        </span>
+        <span class="special" data-move-x="400px">
+          <img src="/images/mall/mall(3).png" />
+        </span>
+      </div>
+    </div>
+
+  </div>
+  <div class="con3-wrap">
+    <div class="con3-wrap-content">
+      <% _.each(mall.list, function(item){%>
+      <div class="con3-wrap-item special" data-move-y="200px">
+        <img src="<%= item.pic %>"/>
+        <p class="title"><%= item.title %></p>
+        <p class="desc"><%= item.desc %></p>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div id="service-program">
+  <div class="con1-wrap">
+    <div class="common-pagehead">
+      <div class="common-pagehead-wrap">
+        <span>
+          <p>招客猫，小程序</p>
+          <p>零门槛适用小程序</p>
+          <!-- <p>
+            <a class="link-a" target="_blank" href="https://merchant.zhaokemall.com/">立即试用</a>
+          </p> -->
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="con2-wrap bgGray">
+    <div class="main-content special">
+      <p class="commonTitle"><%= cause.title %></p>
+      <div class="flex">
+        <% _.each(cause.list, function(item){ %>
+        <div class="con2-item">
+          <img src="<%= item.pic %>"/>
+          <div class="con2-item-desc">
+            <p class="title"><%= item.title %></p>
+            <p class="desc"><%= item.desc %></p>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+  <div class="con3-wrap">
+    <p class="commonTitle"><%= scene.title %></p>
+    <div class="con3-wrap-content">
+      <ul class="con3-wrap-ul">
+        <% _.each(scene.list, function(item, index) {%>
+          <% if(index%2==0){ %>
+        <li class="special" data-move-y="-300px">
+          <% } else{ %>
+        <li class="special" data-move-y="300px">
+          <% } %>
+          <div class="normal-inner">
+            <img src="<%= item.pic %>"/>
+            <div class="lineheight"></div>
+          </div>
+          <p class="title"><%= item.title %></p>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+</div>

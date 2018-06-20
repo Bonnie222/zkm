@@ -1,0 +1,32 @@
+<div class="footer">
+  <div class="footer-wrap">
+    <div class="footer-con">
+      <% _.each(link, function(item){ %>
+      <div class="footer-inner">
+        <p class="inner-title"><%= item.title %></p>
+        <% _.each(item.linkMenu, function(menu){ %>
+        <p class="inner-text">
+          <a href="<%= menu.url %>"><%= menu.text %></a>
+        </p>
+        <%  }) %>
+      </div>
+      <%  }) %>
+      <div class="footer-inner pull-right">
+        <p class="inner-title">联系方式</p>
+        <p class="inner-text">客服热线：400 - 870 - 0838</p>
+        <p class="inner-text">周一至周五 9：00 - 18：30</p>
+        <!-- <p class="inner-text wx-wrap">微信公众号
+          <div class="wx-logo">
+            <img src="images/home/weixin.png" />
+          </div>
+        </p> -->
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <img src="/images/zkm-logo.png" class="zkm-logo"/>
+      <span>版权所有 ©2018  网站备案/许可证号：</span>
+      <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备17156402号-2</a>
+    </div>
+  </div>
+</div>

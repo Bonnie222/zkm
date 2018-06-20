@@ -1,0 +1,25 @@
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="58px" height="58px" viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'JLinXin';}
+	.st3{font-size:12px;}
+	.st4{fill:url(#SVGID_2_);}
+</style>
+<defs>
+</defs>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="47.3402" y1="60.7661" x2="10.6598" y2="-2.7661">
+	<stop  offset="2.434045e-03" style="stop-color:#FF9A22"/>
+	<stop  offset="1" style="stop-color:#FF6A48"/>
+</linearGradient>
+<path class="st0" d="M50,58H8c-4.4,0-8-3.6-8-8V8c0-4.4,3.6-8,8-8h42c4.4,0,8,3.6,8,8v42C58,54.4,54.4,58,50,58z"/>
+<text transform="matrix(1 0 0 1 17 32.7948)" class="st1 st2 st3">收银</text>
+<path class="st1" d="M20.4,58c-1.2-1.7-1.9-3.8-1.9-6c0-5.8,4.7-10.5,10.5-10.5S39.5,46.2,39.5,52c0,2.2-0.7,4.3-1.9,6h1.8
+	c1-1.8,1.6-3.8,1.6-6c0-6.6-5.4-12-12-12c-6.6,0-12,5.4-12,12c0,2.2,0.6,4.2,1.6,6H20.4z"/>
+<polygon class="st1" points="29.8,58 29.8,55.7 34.2,55.7 34.2,54.2 29.8,54.2 29.8,52.2 29.9,52 34.2,52 34.2,50.5 30.9,50.5 
+	34.2,45.6 32.9,44.8 29.6,49.7 28.7,49.7 25,44.5 23.7,45.3 27.4,50.5 23.8,50.5 23.8,52 28.3,52 28.3,54.2 23.8,54.2 23.8,55.7 
+	28.3,55.7 28.3,58 "/>
+</svg>
